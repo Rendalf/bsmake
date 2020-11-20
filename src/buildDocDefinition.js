@@ -32,7 +32,7 @@ module.exports = function buildDocDefinition (data) {
             {
               alignment: 'right',
               fontSize: 14,
-              text: `${data.bankName.toLowerCase().replace(/ /g, '')}.com`,
+              text: `${data.bankName.toLowerCase().replace(/[^A-Za-z]/g, '')}.com`,
             },
           ],
         ],
